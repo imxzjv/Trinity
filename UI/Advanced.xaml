@@ -137,6 +137,7 @@
                         <CheckBox IsChecked="{Binding Advanced.LogCategories, ConverterParameter=Weight, Converter={StaticResource flagsEnumValueBooleanConverter}}" Content="Log Target Weight System"/>
                         <CheckBox IsChecked="{Binding Advanced.LogCategories, ConverterParameter=CacheManagement, Converter={StaticResource flagsEnumValueBooleanConverter}}" Content="Log Cache System"/>
                         <CheckBox IsChecked="{Binding Advanced.LogCategories, ConverterParameter=TraceCoroutines, Converter={StaticResource flagsEnumValueBooleanConverter}}" Content="Log Coroutine Trace"/>
+                        <CheckBox IsChecked="{Binding Advanced.LogCategories, ConverterParameter=Party, Converter={StaticResource flagsEnumValueBooleanConverter}}" Content="Log Party"/>
 
                     </UniformGrid>
 

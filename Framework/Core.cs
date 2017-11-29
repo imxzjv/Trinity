@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using Trinity.Components.Adventurer;
 using Trinity.Components.QuestTools;
+using Trinity.Components.Swarm;
 using Trinity.DbProvider;
 using Trinity.Framework.Actors;
 using Trinity.Framework.Avoidance;
@@ -66,6 +67,8 @@ namespace Trinity.Framework
         public static TrinityStorage Storage => TrinitySettings.Storage;
         public static MainGridProvider DBGridProvider => (MainGridProvider)Navigator.SearchGridProvider;
         public static DefaultNavigationProvider DBNavProvider => (DefaultNavigationProvider)Navigator.NavigationProvider;
+
+        public static SwarmPartyProvider Swarm { get; } = new SwarmPartyProvider();
 
         public static bool GameIsReady => ZetaDia.IsInGame && ZetaDia.Me.IsValid && !ZetaDia.Globals.IsLoadingWorld && !ZetaDia.Globals.IsPlayingCutscene;
 

@@ -34,7 +34,7 @@ namespace Trinity.Framework.Helpers
         ItemEvents = 0x00800000,
         Exploration = 0x01000000,
         TraceCoroutines = 0x02000000,
-        Unused27 = 0x04000000,
+        Party = 0x04000000,
         Unused28 = 0x08000000,
         Unused29 = 0x10000000,
         Unused30 = 0x20000000,
