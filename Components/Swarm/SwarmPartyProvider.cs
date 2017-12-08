@@ -79,20 +79,18 @@ namespace Trinity.Components.Swarm
             if (!Core.TrinityIsReady)
                 return;
 
-            if (Core.TrinityIsReady && (_network == null || !_network.IsRunning))
+            if (_network == null || !_network.IsRunning)
             {
                 Start();
+                return;
             }
-            else
+        
+            if (!(TrinityCombat.Party is SwarmPartyProvider))
             {
-                if (!(TrinityCombat.Party is SwarmPartyProvider))
-                {
-                    TrinityCombat.Party = this;
-                }
+                TrinityCombat.Party = this;
             }
 
             _network?.Update();
-
             SendPlayerData();
 
             //RadarDebug.DrawElipse(Members.Select(m => m.Position), 250, RadarDebug.DrawColor.Blue);

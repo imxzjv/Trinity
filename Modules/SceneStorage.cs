@@ -133,9 +133,8 @@ namespace Trinity.Modules
                         if (scene.Mesh.Zone.GridSquares.Length <= 1 && (subScene != null && !subScene.HasGridSquares()))
                             continue;
 
-                        var adventurerScene = new WorldScene(scene, ExplorationData.ExplorationNodeBoxSize,
-                            ExplorationData.ExplorationNodeBoxTolerance);
-                        if (adventurerScene.Cells.Count > 0)
+                        var adventurerScene = new WorldScene(scene, ExplorationData.ExplorationNodeBoxSize, ExplorationData.ExplorationNodeBoxTolerance);
+                        if (adventurerScene.Cells.Count > 0 && Core.Scenes.CurrentScene.IsConnected(adventurerScene))
                         {
                             CurrentWorldScenes.Add(adventurerScene);
                             addedScenes.Add(adventurerScene);

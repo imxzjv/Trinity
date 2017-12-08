@@ -35,26 +35,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Demonbuddy">
-      <HintPath>Dependencies\Demonbuddy.exe</HintPath>
+      <HintPath>C:\db\DB-Current\Demonbuddy.exe</HintPath>
     </Reference>
     <Reference Include="GreyMagic">
-      <HintPath>Dependencies\GreyMagic.dll</HintPath>
+      <HintPath>C:\db\DB-Current\GreyMagic.dll</HintPath>
     </Reference>
     <Reference Include="IronPython">
-      <HintPath>Dependencies\IronPython.dll</HintPath>
+      <HintPath>C:\db\DB-Current\IronPython.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
-      <HintPath>Dependencies\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <HintPath>C:\db\DB-Current\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Data.Services, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Dynamic">
-      <HintPath>Dependencies\Microsoft.Dynamic.dll</HintPath>
+      <HintPath>C:\db\DB-Current\Microsoft.Dynamic.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Scripting">
-      <HintPath>Dependencies\Microsoft.Scripting.dll</HintPath>
+      <HintPath>C:\db\DB-Current\Microsoft.Scripting.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Scripting.Metadata">
-      <HintPath>Dependencies\Microsoft.Scripting.Metadata.dll</HintPath>
+      <HintPath>C:\db\DB-Current\Microsoft.Scripting.Metadata.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -67,13 +68,14 @@
     <Reference Include="System.Management" />
     <Reference Include="System.Numerics" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="Udis86Net">
-      <HintPath>Dependencies\Udis86Net.dll</HintPath>
+      <HintPath>C:\db\DB-Current\Udis86Net.dll</HintPath>
     </Reference>
     <Reference Include="WindowsBase" />
   </ItemGroup>

@@ -168,43 +168,9 @@ namespace Trinity.Components.Adventurer.Game.Exploration
             if (!nodes.Any())
                 return Vector3.Zero;
 
-            //if (nodes.Count == 2 && nodes.First().IsNextTo(nodes.Last()))
-            //{
-            //    var start = nodes.First().NavigableCenter;
-            //    var end = nodes.Last().NavigableCenter;
-            //    return MathEx.CalculatePointFrom(start, end, start.Distance2D(end) / 2);
-            //}
-
             var centerIndex = Math.Max(0, (int)Math.Round((double)nodes.Count / 2, 0)-1);
             var center = nodes.ElementAt(centerIndex);
             return center.NavigableCenter;
-
-            //foreach (var n in Nodes.Where(n => n.HasEnoughNavigableCells && n.IsConnectionNode))
-            //{
-            //    switch (direction)
-            //    {
-            //        case SceneExitDirections.North:
-            //            if (n.TopLeft.X == NorthWest.X)
-            //                return n.NavigableCenter;
-            //            break;
-
-            //        case SceneExitDirections.East:
-            //            if (n.BottomLeft.Y == NorthEast.Y)
-            //                return n.NavigableCenter;
-            //            break;
-
-            //        case SceneExitDirections.South:
-            //            if (n.BottomRight.X == SouthEast.X)
-            //                return n.NavigableCenter;
-            //            break;
-
-            //        case SceneExitDirections.West:
-            //            if (n.TopRight.Y == SouthWest.Y)
-            //                return n.NavigableCenter;
-            //            break;
-            //    }
-            //}
-            //return Vector3.Zero;
         }
 
         public Vector2 Size { get; set; }
