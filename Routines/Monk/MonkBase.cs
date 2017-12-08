@@ -453,7 +453,7 @@ namespace Trinity.Routines.Monk
             => s.TimeSinceUse > 250 && !s.IsLastUsed;
 
         protected static float WaveOfLightRange 
-            => Legendary.TzoKrinsGaze.IsEquipped ? 55f : 16f;
+            => Legendary.TzoKrinsGaze.IsEquipped ? 60f : 16f;
 
         protected static int MaxDashingStrikeCharges 
             => Runes.Monk.Quicksilver.IsActive ? 3 : 2;
@@ -739,6 +739,9 @@ namespace Trinity.Routines.Monk
 
                 if (Skills.Monk.SevenSidedStrike.CanCast())
                     return SevenSidedStrike(CurrentTarget);
+
+                if (Skills.Monk.WaveOfLight.CanCast())
+                    return WaveOfLight(CurrentTarget);
             }
 
 
